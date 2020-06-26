@@ -1,0 +1,14 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head th:include="include/fore/header::html" ></head>
+<body>
+<!--点击购买跳转过来的，通过imgAndInfo.html的$(".buyLink").click跳转过来-->
+<div id="workingArea">
+    <div th:replace="include/fore/top::html" ></div>
+    <div th:replace="include/fore/search::html" ></div>
+    <!--buyPage是结算业务页面-->
+    <div th:replace="include/fore/cart/buyPage::html" ></div>
+    <div th:replace="include/fore/footer::html" ></div>
+</div>
+</body>
+</html>
